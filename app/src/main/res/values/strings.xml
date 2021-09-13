@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Merge TableLayout-SlideLayout-Inflater</string>
+    <string name="editTextHint">New Item (max: 30)</string>
+    <string name="button">Button</string>
+
+    <string name="swipeLayout">Swipe Layout</string>
+    <string name="archive">Archive</string>
+    <string name="delete">Delete</string>
+
+    <string name="starDescription">Image of a Star</string>
+        <string name="binDescription">Image of a Bin</string>
 </resources>

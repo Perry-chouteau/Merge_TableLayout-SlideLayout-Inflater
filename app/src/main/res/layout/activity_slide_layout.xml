@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/swipeLayout"
+    android:orientation="vertical"
+    android:background="@color/white"
+    app:clickToClose="true">
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_sol"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/archive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/gri"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/archive"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/red"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/linear_sag"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/starImg"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"
+            android:contentDescription="@string/starDescription"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:src="@drawable/ic_baseline_star_24" />
+
+        <ImageView
+            android:id="@+id/deleteImg"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:contentDescription="@string/binDescription"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:src="@drawable/ic_baseline_delete_24" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textInside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/swipeLayout"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</com.daimajia.swipe.SwipeLayout>
